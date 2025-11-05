@@ -1,6 +1,7 @@
+export { Channel } from "./channel";
+
 import { Hono } from "hono";
 import { cors } from "hono/cors";
-export { Channel } from "./channel";
 import { Env } from "./env";
 
 const app = new Hono<{ Bindings: Env }>();
